@@ -8,9 +8,9 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 ### Vulnerabilities in the DSL Execution Layer
 ### Others (ZKVM, ZKEVM...)
 
-## ZK Vulnerability Classification  
+## Vulnerability Classification  
 
-### ZK Risk Level Description
+### Risk Level Description
 
 <table>
   <tr>
@@ -65,7 +65,7 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 | ZK-24 | ⚫ | --- | --- |
 
 
-## Learn Circuit Auditing
+## Learn Circom Auditing
 
 
 ### Week 1
