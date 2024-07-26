@@ -35,7 +35,7 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
   </tr>
 </table>
 
-### 🔴 High   🟡 Medium   🔵 Low   ⚫ Info
+### 🔴 High   🟡 Medium   🔵 Low   ⚫ Info    
 <style>
 table th:first-of-type {
     width: 10%;
