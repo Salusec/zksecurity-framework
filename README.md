@@ -37,7 +37,7 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 
 ### 🔴 High   🟡 Medium   🔵 Low   ⚫ Info    
 
-| <div style="width:100px;">NO.</div>|  Risk level  | Vulnerability Name                             | Description                                                                                                                                                                                                            |
+| NO.|  Risk level  | Vulnerability Name                             | Description                                                                                                                                                                                                            |
 |:-------|:------------:|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZK-1   |      🔴      | Under-constrained Circuits                     | Under-constrained circuits lack necessary constraints, allowing for exploits like using invalid values, and can lead to severe consequences.                                                                           |
 | ZK-2   |      🔴      | Nondeterministic Circuits                      | Nondeterministic circuits, a subset of under-constrained circuits, can allow multiple valid proofs for the same outcome, leading to vulnerabilities like double spending.                                              |
