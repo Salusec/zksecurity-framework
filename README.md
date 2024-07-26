@@ -37,8 +37,8 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 
 ### 🔴 High   🟡 Medium   🔵 Low   ⚫ Info
 
-| NO.   |  Risk level   | Vulnerability Name | Description |
-|-------| --- | --- | --- |
+| NO.   | Risk level | Vulnerability Name                             | Description                                                                                                                                                                                                            |
+|-------|------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZK-1  | 🔴         | Under-constrained Circuits                     | Under-constrained circuits lack necessary constraints, allowing for exploits like using invalid values, and can lead to severe consequences.                                                                           |
 | ZK-2  | 🔴         | Nondeterministic Circuits                      | Nondeterministic circuits, a subset of under-constrained circuits, can allow multiple valid proofs for the same outcome, leading to vulnerabilities like double spending.                                              |
 | ZK-3  | 🔴         | Arithmetic Over/Under Flows                    | In zk cryptography, modular arithmetic over a scalar field can cause unintended overflows and underflows if not properly checked, leading to vulnerabilities like an underflow in balance computation.                 |
@@ -53,26 +53,26 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 | ZK-12 | 🔴         | Missing Blinding Factors                       | Due to the lack of blinding factors in the original Plonk implementation, private inputs can be extracted from the zero-knowledge proof.                                                                               |
 | ZK-13 | 🔴         | Bad Polynomial Implementation                  | This is caused by the failure to trim trailing zero coefficients after arithmetic operations, leading to potential miscalculations or denial of service attacks through Rust panics.                                   |
 | ZK-14 | 🔴         | Not an atomic operation                        | The vulnerability allows attackers to exploit concurrent operations caused by non-atomic updates, enabling unauthorized modifications to the state of the Merkle tree.                                                 |
-| ZK-15 | 🟡 | --- | --- |
-| ZK-16 | 🟡 | --- | --- |
-| ZK-17 | 🟡 | --- | --- |
-| ZK-18 | 🟡 | --- | --- |
-| ZK-19 | 🟡 | --- | --- |
-| ZK-20 | 🟡 | --- | --- |
-| ZK-21 | 🔵 | --- | --- |
-| ZK-22 | 🔵 | --- | --- |
-| ZK-23 | 🔵 | --- | --- |
-| ZK-24 | 🔵 | --- | --- |
-| ZK-25 | 🔵 | --- | --- |
-| ZK-26 | ⚫ | --- | --- |
-| ZK-27 | ⚫ | --- | --- |
-| ZK-28 | ⚫ | --- | --- |
-| ZK-29 | ⚫ | --- | --- |
-| ZK-30 | ⚫ | --- | --- |
-| ZK-31 | ⚫ | --- | --- |
-| ZK-32 | ⚫ | --- | --- |
-| ZK-33 | ⚫ | --- | --- |
-| ZK-34 | ⚫ | --- | --- |
+| ZK-15 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-16 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-17 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-18 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-19 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-20 | 🟡         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-21 | 🔵         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-22 | 🔵         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-23 | 🔵         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-24 | 🔵         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-25 | 🔵         | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-26 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-27 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-28 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-29 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-30 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-31 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-32 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-33 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
+| ZK-34 | ⚫          | ---                                            | ---                                                                                                                                                                                                                    |
 
 
 ## Learn Circom Auditing
