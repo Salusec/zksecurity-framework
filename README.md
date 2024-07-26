@@ -36,6 +36,17 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 </table>
 
 ### 🔴 High   🟡 Medium   🔵 Low   ⚫ Info
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 5%;
+}
+table th:nth-of-type(3) {
+    width: 20%;
+}
+</style>
 
 | NO.    |  Risk level  | Vulnerability Name                             | Description                                                                                                                                                                                                            |
 |:-------|:------------:|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
