@@ -47,7 +47,6 @@ table th:nth-of-type(3) {
     width: 20%;
 }
 </style>
-
 | NO.    |  Risk level  | Vulnerability Name                             | Description                                                                                                                                                                                                            |
 |:-------|:------------:|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZK-1   |      🔴      | Under-constrained Circuits                     | Under-constrained circuits lack necessary constraints, allowing for exploits like using invalid values, and can lead to severe consequences.                                                                           |
