@@ -1,5 +1,9 @@
+[![ethereum](/pic/zketh.jpg "ethereum")](#)
 # ZK Security Framework
-This framework focuses on the completeness, soundness, and zero-knowledge properties of ZKP to meticulously classify existing vulnerabilities and explores multiple categories of vulnerabilities, including completeness issues, soundness problems, information leakage, and non-standardized cryptographic implementations. Furthermore, we propose a set of defense strategies that include a rigorous security audit process and a robust distributed network security ecosystem. This audit strategy employs a divide-and-conquer approach, segmenting the project into different levels, from the application layer to the platform-nature infrastructure layer, using threat modelling, line-by-line audit, and internal cross-review, among other means, aimed at comprehensively identifying vulnerabilities in ZKP circuits, revealing design flaws in ZKP applications, and accurately identifying inaccuracies in the integration process of ZKP primitives.
+The ZK Security Framework is an evolving repository of ZKP security knowledge, built on the [ZK Bug Tracker](https://github.com/0xPARC/zk-bug-tracker) and ["Zero-Knowledge Proof Vulnerability Analysis and Security Auditing"](https://eprint.iacr.org/2024/514). This framework focuses on the completeness, soundness, and zero-knowledge properties of ZKP, aiming to meticulously classify existing ZKP vulnerabilities and propose specific defense strategies and audit checklists. We also consider more circuit audit teaching work to enhance developers' understanding of specific security risks in ZKP.
+
+### We are truly grateful to these sponsors; without your support, we would not be able to take this great first step.
+
 
 ## ZKP Security Risks Intro
 
