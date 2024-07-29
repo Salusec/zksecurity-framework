@@ -3,10 +3,43 @@ This framework focuses on the completeness, soundness, and zero-knowledge proper
 
 ## ZKP Security Risks Intro
 
-### Risks Caused by Cryptography Basics
-### Proof System Risks
-### Vulnerabilities in the DSL Execution Layer
-### Others (ZKVM, ZKEVM...)
+### Completeness Issues --- Over-constrained Circuits
+
+Excessive constraint in a circuit refers to adding additional constraints to a circuit that is already under normal constraints, which can result in the circuit failing to be successfully proved or verified. This issue may stem from the mechanism of the compiler itself. Taking circom and halo2 as examples, they establish constraints through assertions when compiling circuits. However, during the optimization process of compiling circuits, the compiler may introduce additional assertions, causing the inputs and outputs to not satisfy the current constraints during the proving process, leading to errors. Additionally, developers adding too many or repetitive constraints when designing circuits may also trigger such issues.
+
+### Soundness Issues --- Under-constrained Circuits
+
+The vulnerability of an incompletely constrained circuit refers to a situation in circuit design or programming implementation where some constraints are not set or set incompletely, leading to the circuit exhibiting unpredictable behavior or producing unexpected results. In certain cases, such incompletely constrained circuits may have serious consequences. For example, in the incremental Merkle tree implementation in ZK-kit smart contracts, the lack of range constraints on leaf node values allows malicious attackers to exploit this vulnerability to generate illegal zero-knowledge proofs, enabling them to carry out duplicate fund withdrawals.
+
+
+### Information Leakage --- Trusted Setup Leak
+
+In encryption protocols based on zero-knowledge proofs, the parameter generation process may expose some sensitive information, thereby compromising the security of the protocol. If a participant involved in generating the parameters retains some secret values, it is possible to use this information to forge valid proofs, deceiving other participants or stealing their assets.
+
+### Arithmetic Over/Under Flows
+
+In the field of zero-knowledge cryptography, modular arithmetic operations are common operations that are typically performed in scalar fields. However, due to the limitations of finite field orders, failure to handle overflow and underflow properly in arithmetic operations can lead to security risks.
+
+## Unstandardized cryptographic implementation
+
+### Forging of Zero Knowledge Proofs
+
+If a zero-knowledge proof protocol has a security flaw, a malicious prover can construct a forged proof that passes verification. This forged proof can be used to "prove" any claim the prover desires, a security vulnerability referred to as the "Frozen Heart" bug by the TrailOfBits team.
+
+The "Frozen Heart" bug is a severe security vulnerability that can jeopardize the correctness of various zero-knowledge proof systems, including PlonK and Bulletproofs. When such vulnerabilities affect a zero-knowledge proof system, protections for user privacy, data integrity, and transaction security are compromised. Many zero-knowledge proof protocols use the Fiat-Shamir transform to achieve non-interactive verification, which relies on the concept of a "random oracle model." However, as noted by TrailOfBits, the implementation of the Fiat-Shamir transform commonly encounters operational issues, primarily due to the lack of specific guidance on different protocol implementations. Typically, protocol design papers do not comprehensively include all essential details needed for coding practices, leading to defects and vulnerabilities in the implementation process. These vulnerabilities provide opportunities for attackers to exploit, enabling them to successfully forge proofs and undermine the correctness and security of zero-knowledge proof systems.
+
+### Bad Randomness
+
+At the core of zero-knowledge proofs is the ability to verify someone's knowledge or attributes without revealing any additional information, with randomness playing a crucial role. If a protocol uses an inappropriate source of randomness, attackers may have the opportunity to predict or infer the generated random numbers, rendering the interaction between the prover and verifier meaningless. If the proof system used by the prover has randomness vulnerabilities, sensitive information may be compromised. Similarly, if the random challenge issued by the verifier is singular or predictable, attackers can prepare fraudulent proofs in advance to deceive the verifier.
+
+### Bad Polynomial Implementation
+
+"Bad Polynomial Implementation" refers to implementation flaws that occur during the polynomial calculation process in zero-knowledge proof protocols. These flaws may stem from programming errors, incorrect algorithm choices, or a lack of understanding of mathematical properties. This issue can occur at critical junctures of zero-knowledge proof protocols, such as constructing polynomial commitments, performing polynomial evaluations, or verifying polynomial equations. Improper polynomial handling methods can result in inaccurate computation results or the inadvertent disclosure of originally confidential information, thereby compromising the security and effectiveness of zero-knowledge proofs.
+
+### Deprecated Hash Function
+
+The security and effectiveness of zero-knowledge proofs depend on the correct implementation and security of their cryptographic primitives (such as hash functions). With the advancement of computing power, some early hash functions like MD5, SHA-1, RIPEMD, RIPEMD-128, Whirlpool, etc., are no longer considered secure. Using these deprecated hash functions may make it easier for attackers to predict or uncover confidential information through brute force methods, compromising the fundamental properties of zero-knowledge proofs.
+
 
 ## Vulnerability Classification  
 
