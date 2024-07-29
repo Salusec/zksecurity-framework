@@ -152,9 +152,9 @@ Learn through puzzles in [ZKHack](https://zkhack.dev/), which involve more proof
 
 ## ZK Audit Database
 
-### [Audit Report library](/report/)
+### [Audit Report library](/zkreport/)
 
-### Literature Rack
+
 
 
 
