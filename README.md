@@ -1,9 +1,9 @@
-[![ethereum](/pic/zketh.jpeg "ethereum")](#)
+
 # ZK Security Framework
 The ZK Security Framework is an evolving repository of ZKP security knowledge, built on the [ZK Bug Tracker](https://github.com/0xPARC/zk-bug-tracker) and ["Zero-Knowledge Proof Vulnerability Analysis and Security Auditing"](https://eprint.iacr.org/2024/514). This framework focuses on the completeness, soundness, and zero-knowledge properties of ZKP, aiming to meticulously classify existing ZKP vulnerabilities and propose specific defense strategies and audit checklists. We also consider more circuit audit teaching work to enhance developers' understanding of specific security risks in ZKP.
 
 ### We are truly grateful to these sponsors; without your support, we would not be able to take this great first step.
-
+[![ethereum](/pic/ethzk.jpeg "ethereum")](#)
 
 ## ZKP Security Risks Intro
 
