@@ -222,7 +222,7 @@ The security and effectiveness of zero-knowledge proofs depend on the correct im
      - [On Σ-protocols](https://www.cs.au.dk/~ivan/Sigma.pdf)
      - [Sigma Protocols, Secret Sharing](https://crypto.stanford.edu/cs355/19sp/lec6.pdf)
      - [Zero Knowledge Proofs with Sigma Protocols](https://medium.com/@loveshharchandani/zero-knowledge-proofs-with-sigma-protocols-91e94858a1fb)
-     - [**Zero-Knowledge Proof - Cryptographic Primitives and Sigma Protocol**](https://www.byont.io/blog/zero-knowledge-proof-cryptographic-primitives-and-sigma-protocol)
+     - [Zero-Knowledge Proof - Cryptographic Primitives and Sigma Protocol](https://www.byont.io/blog/zero-knowledge-proof-cryptographic-primitives-and-sigma-protocol)
 2. **zk-SNARKs and zk-STARKs**:
    - **Topics**: Concepts of zk-SNARKs (Succinct Non-Interactive Argument of Knowledge) and zk-STARKs (Scalable Transparent Argument of Knowledge).
    - **Resources**:
