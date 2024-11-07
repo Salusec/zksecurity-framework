@@ -176,7 +176,7 @@ The security and effectiveness of zero-knowledge proofs depend on the correct im
      - [On Interactive Proofs and Zero-Knowledge: A Primer](https://medium.com/magicofc/interactive-proofs-and-zero-knowledge-b32f6c8d66c3)
      - [A guide to Zero Knowledge Proofs](https://medium.com/@Luca_Franceschini/a-guide-to-zero-knowledge-proofs-f2ff9e5959a8)
      - [Introduction to Zero Knowledge - Alon Rosen](https://www.youtube.com/watch?v=6uGimDYZPMw)
-     - [Knowledge Complexity of Interactive Proof Systems]([https://people.csail.mit.edu/silvio/Selected Scientific Papers/Proof Systems/The_Knowledge_Complexity_Of_Interactive_Proof_Systems.pdf](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Proof%20Systems/The_Knowledge_Complexity_Of_Interactive_Proof_Systems.pdf))
+     - [Knowledge Complexity of Interactive Proof Systems](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Proof%20Systems/The_Knowledge_Complexity_Of_Interactive_Proof_Systems.pdf)
      - [How to prove all NP-statements in zero-knowledge, and a methodology of cryptographic protocol design](https://link.springer.com/chapter/10.1007/3-540-47721-7_11)
      - [On Defining Proofs of Knowledge](https://www.wisdom.weizmann.ac.il/~oded/PSX/pok.pdf)
      - [The  9th BIU Winter School on Cryptography - Zero Knowledge](https://www.youtube.com/playlist?list=PL8Vt-7cSFnw29cLUVqAIuMlg1QJ-szV0K)
