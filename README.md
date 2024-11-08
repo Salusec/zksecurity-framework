@@ -121,96 +121,150 @@ The security and effectiveness of zero-knowledge proofs depend on the correct im
 | ZK-43  |      ⚫       | Inefficient Computation   | Some implementations contain unnecessary computations and redundant constraints, which increases computational overhead without providing additional functionality or security, potentially degrading system performance.     |
 
 
-## Learn Circom Auditing
+## Learn Zero Knowledge Proof
 
+### Stage 1: **Mathematical and Computational Foundations**
 
-### Week 1
+#### Objectives:
 
-### Objectives:
+- Build essential foundational knowledge in mathematics and cryptography needed to understand zero-knowledge proofs.
+- Gain familiarity with fundamental cryptographic concepts and complexity theory relevant to ZKP.
 
-Master Circom syntax
+#### Study Tasks and Resources:
 
-Familiarize with the Circom and Snarkjs development toolchain to write, test code, and generate target files
+1. **Basic Linear Algebra**:
+   - **Topics**: Matrix operations, vector spaces, linear transformations.
+   - **Resources**: 
+     - [The-Art-of-Linear-Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra])
+     - [MIT 18.06SC Linear Algebra, Fall 2011](https://www.youtube.com/watch?v=7UJ4CFRGd-U&list=PL221E2BBF13BECF6C)
+2. **Basic Probability**:
+   - **Topics**: Basic probability distributions, random variables, conditional probability.
+   - **Resources**:
+     - [Probability](https://github.com/DataForScience/Probability)
+     - [Seeing-Theory](https://github.com/seeingtheory/Seeing-Theory)
+     - [Probability_Theory](https://github.com/weijie-chen/Probability_Theory)
+     - [MIT RES.6-012 Introduction to Probability, Spring 2018](https://www.youtube.com/watch?v=1uW3qMFA9Ho&list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)
+3. **Basic Cryptography Concepts**:
+   - **Topics**: Symmetric and asymmetric encryption (RSA), hash functions, digital signatures.
+   - **Resources**:
+     - [Introduction to Modern Cryptography, Second Edition](https://eclass.uniwa.gr/modules/document/file.php/CSCYB105/Reading%20Material/[Jonathan_Katz,_Yehuda_Lindell]_Introduction_to_Mo(2nd).pdf)
+     - [A Graduate Course in Applied Cryptography](https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf)
+     - [Cryptography I](https://www.youtube.com/watch?v=1bSjcU2GeG0&list=PL58C6Q25sEEHXvACYxiav_lC2DqSlC7Og)
+4. **Basic Computational Complexity**:
+   - **Topics**: Complexity classes (P, NP), algorithmic complexity basics.
+   - **Resources**:
+     - [Computational Complexity: A Modern Approach](https://theory.cs.princeton.edu/complexity/book.pdf)
+     - [Introduction To The Theory Of Computation](https://fuuu.be/polytech/INFOF408/Introduction-To-The-Theory-Of-Computation-Michael-Sipser.pdf)
+     - [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/watch?v=9syvZr-9xwk&list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY)
 
-Learn to write Circom circuits using Tornado Cash as an example
+------
 
-### Study Tasks:
+### Stage 2: **Introduction to Zero-Knowledge Proofs**
 
-Read the [official documentation](https://docs.circom.io/) of the Circom circuit language
+#### Objectives:
 
-Read the [0xPARC Circom study section](https://learn.0xparc.org/)
+- Grasp the foundational concepts and properties of zero-knowledge proofs.
+- Understand interactive and non-interactive ZKP models, and study basic protocols.
 
-Get familiar with the [circom](https://github.com/iden3/circom) + [snarkjs](https://github.com/iden3/snarkjs) toolchain and the online development platform [zkrepl](https://zkrepl.dev/) provided by iden3
+#### Study Tasks and Resources:
 
-Learn Circom circuit writing using [Tornado Cash](https://docs.tornadoeth.cash/tornado-cash-classic/circuits) as an example
+1. **Zero-Knowledge Proof Basics**:
+   - **Topics**: Definitions, properties (completeness, soundness, zero-knowledge).
+   - **Resources**:
+     - [Zero Knowledge for Dummies: Introduction to ZK Proofs](https://medium.com/veridise/zero-knowledge-for-dummies-introduction-to-zk-proofs-29e3fe9604f1)
+     - [Zero Knowledge Proofs: An illustrated primer](https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/)
+     - [On Interactive Proofs and Zero-Knowledge: A Primer](https://medium.com/magicofc/interactive-proofs-and-zero-knowledge-b32f6c8d66c3)
+     - [A guide to Zero Knowledge Proofs](https://medium.com/@Luca_Franceschini/a-guide-to-zero-knowledge-proofs-f2ff9e5959a8)
+     - [Introduction to Zero Knowledge - Alon Rosen](https://www.youtube.com/watch?v=6uGimDYZPMw)
+     - [Knowledge Complexity of Interactive Proof Systems](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Proof%20Systems/The_Knowledge_Complexity_Of_Interactive_Proof_Systems.pdf)
+     - [How to prove all NP-statements in zero-knowledge, and a methodology of cryptographic protocol design](https://link.springer.com/chapter/10.1007/3-540-47721-7_11)
+     - [On Defining Proofs of Knowledge](https://www.wisdom.weizmann.ac.il/~oded/PSX/pok.pdf)
+     - [The  9th BIU Winter School on Cryptography - Zero Knowledge](https://www.youtube.com/playlist?list=PL8Vt-7cSFnw29cLUVqAIuMlg1QJ-szV0K)
+     - [ZK-Learning](https://zk-learning.org/)
+2. **Interactive Zero-Knowledge Proofs**:
+   - **Topics**: Structure of interactive proofs, challenge-response protocols.
+   - **Resources**:
+     - [Zero Knowledge Proof: Interactive vs. Non-Interactive](https://nfting.medium.com/zero-knowledge-proof-interactive-vs-non-interactive-a8ba6e2cd7c7)
+     - [Introduction to Interactive Zero-Knowledge Proofs](https://blog.chain.link/interactive-zero-knowledge-proofs/)
+     - [Interactive Proofs and Zero-Knowledge](https://crypto.stanford.edu/cs355/18sp/lec3.pdf)
+     - [Interactive Proofs and the Sum-Check Protocol](https://theory.cs.princeton.edu/complexity/book.pdf)
+     - [Interactive Proofs (Part I)](https://www.youtube.com/watch?v=2XrOdfYviwA&t=2s)
+     - [Interactive Proofs (Part II)](https://www.youtube.com/watch?v=w-6R3TxJ5dw)
+3. **Non-Interactive Zero-Knowledge Proofs (NIZK)**:
+   - **Topics**: Non-interactive proofs, Fiat-Shamir heuristic.
+   - **Resources**:
+     - [The Fiat-Shamir Transformation](https://www.comp.nus.edu.sg/~prashant/teaching/CS6230/files/notes/lecture11.pdf)
+     - [How To Prove Yourself: Practical Solutions to Identification and Signature Problems](https://link.springer.com/chapter/10.1007/3-540-47721-7_12)
+     - [Jens Groth: Introduction to ZK and Foundations of NIZK Arguments](https://www.youtube.com/watch?v=CJBmuYd4U6g)
+4. **Example Protocols**:
+   - **Topics**: Concrete examples like the "Ali Baba Cave" and Graph Isomorphism problem.
+   - **Resources**:
+     - [Zero-knowledge proofs explained in 3 examples](https://www.circularise.com/blogs/zero-knowledge-proofs-explained-in-3-examples)
+     - [Understanding Zero-knowledge proofs through illustrated examples](https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99)
+     - [Demonstration of Zero-Knowledge Proof for Sudoku Using Standard Playing Cards](https://www.wisdom.weizmann.ac.il/~naor/PAPERS/SUDOKU_DEMO/)
+     - [Zero knowledge proofs: a tale of two friends](https://medium.com/hackernoon/zero-knowledge-proofs-a-tale-of-two-friends-d7a0ffac3185)
 
-Github: Deeply understand the principles of the [Tornado Cash project](https://github.com/tornadocash/tornado-core/tree/master/circuits)
+------
 
-Explore [other zk projects](https://github.com/arnaucube/awesome-circom) based on Circom, such as: [Dark Forest](https://github.com/darkforest-eth/circuits)  [Semaphore](https://github.com/semaphore-protocol/semaphore/tree/main/packages/circuits)
+### Stage 3: **Advanced Zero-Knowledge Proofs**
 
-Extension: Understand the [application prospects](https://github.com/arnaucube/awesome-circom) of ZK technology in the web3 industry
+#### Objectives:
 
-### Week 2
+- Explore advanced ZKP protocols such as zk-SNARKs and zk-STARKs.
+- Understand real-world applications of ZKPs in blockchain, secure multi-party computation, and privacy-preserving technologies.
+- Learn about the latest trends in ZKP research and their future implications.
 
-### Objectives:
+#### Study Tasks and Resources:
 
-Understand the responsibilities of a zk audit engineer
+1. **Sigma Protocols**:
+   - **Topics**: Sigma protocols and their structure, interactive and non-interactive forms.
+   - **Resources**:
+     - [On Σ-protocols](https://www.cs.au.dk/~ivan/Sigma.pdf)
+     - [Sigma Protocols, Secret Sharing](https://crypto.stanford.edu/cs355/19sp/lec6.pdf)
+     - [Zero Knowledge Proofs with Sigma Protocols](https://medium.com/@loveshharchandani/zero-knowledge-proofs-with-sigma-protocols-91e94858a1fb)
+     - [Zero-Knowledge Proof - Cryptographic Primitives and Sigma Protocol](https://www.byont.io/blog/zero-knowledge-proof-cryptographic-primitives-and-sigma-protocol)
+2. **zk-SNARKs and zk-STARKs**:
+   - **Topics**: Concepts of zk-SNARKs (Succinct Non-Interactive Argument of Knowledge) and zk-STARKs (Scalable Transparent Argument of Knowledge).
+   - **Resources**:
+     - zk-SNARKs
+       - [What are zk-SNARKs (Zcash blog)](https://z.cash/technology/zksnarks)
+       - [Introduction to zk-SNARKs with examples](https://consensys.io/blog/introduction-to-zk-snarks)
+       - [BabySNARK- The simplest possible SNARK for NP. You know, for kids!](https://github.com/initc3/babySNARK)
+       - [The MoonMath Manual to zk-SNARKs (A free learning resource for beginners to experts)](https://leastauthority.com/community-matters/moonmath-manual/)
+       - [zk-SNARKs: A Gentle Introduction](https://www.di.ens.fr/~nitulesc/files/Survey-SNARKs.pdf)
+       - [Overview of Modern SNARK Constructions ](https://youtu.be/bGEXYpt3sj0)
+       - [Understanding PLONK](https://vitalik.eth.limo/general/2019/09/22/plonk.html)
+       - [Groth16 Explained](https://www.rareskills.io/post/groth16)
+       - [Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS - Pratyush Mishra](https://www.youtube.com/watch?v=bJDLf8KLdL0)
+       - [Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updateable Structured Reference Strings](https://eprint.iacr.org/2019/099)
+       - [Doubly-efficient zkSNARKs without trusted setup](https://eprint.iacr.org/2017/1132.pdf)
+       - [Spartan: Efficient and general-purpose zkSNARKs without trusted setup](https://eprint.iacr.org/2019/550)
+       - [Libra: Succinct Zero-Knowledge Proofs with Optimal Prover Computation](https://eprint.iacr.org/2019/317)
+       - [HyperPlonk: Plonk with Linear-Time Prover and High-Degree Custom Gates](https://eprint.iacr.org/2022/1355)
+       - [Bulletproofs: Short Proofs for Confidential Transactions and More](https://eprint.iacr.org/2017/1066.pdf)
+     - zk-STARKs
+       - [Introduction to ZK-STARKs](https://hackmd.io/@_33nsoRFQwGYh2T1-T9lqQ/rJHYnQ3Z4?type=view)
+       - [STARK 101](https://starkware.co/stark-101/)
+       - [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/)
+       - [STARK Math: The Journey Begins](https://medium.com/starkware/stark-math-the-journey-begins-51bd2b063c71)
+       - [Zero-Knowledge Proof Algorithm: ZK-Stark-FRI Protocol](https://hackernoon.com/zero-knowledge-proof-algorithm-zk-stark-fri-protocol)
+       - [Scalable, transparent, and post-quantum secure computational integrity](https://eprint.iacr.org/2018/046.pdf)
+3. **Applications in Blockchain**:
+   - **Topics**: zk-SNARKs in Zcash, zk-rollups in Ethereum.
+   - **Resources**:
+     - [SNARK-based permissioned database: rollup by BarryWhitehat](https://github.com/barryWhiteHat/roll_up)
+     - [zkPoD: A Practical Decentralized System for Data Exchange](https://github.com/sec-bit/zkPoD-node)
+     - [Dark Forest: zkSNARK space warfare strategy game](https://zkga.me/)
+     - [Overview of ZKP Applications & zkRollup and zkEVM](https://youtu.be/vuQGdbpDWcs)
+5. **Practical Implementation**:
+   - **Topics**: Implementation of ZKPs with popular libraries like ZoKrates, libsnark.
+   - **Resources**:
+     - [libsnark tutorial](https://github.com/coder5876/libsnark-tutorial)
+     - [circom tutorial](https://github.com/iden3/circom_old/blob/master/TUTORIAL.md)
+     - [gnark turorial](https://github.com/ConsenSys/gnark)
+     - [zokrates tutorial](https://zokrates.github.io/)
+     - [arkworks tutorial](https://github.com/arkworks-rs/r1cs-tutorial/)
 
-Familiarize with common zk circuit vulnerabilities and proof system vulnerabilities
-
-Learn to use auditing tools
-
-### Study Tasks:
-
-Read "[Security of ZKP projects: same but different](https://www.aumasson.jp/data/talks/zksec_zk7.pdf)"
-
-Read the [0xPARC ZK Bug Tracker](https://github.com/0xPARC/zk-bug-tracker/blob/main/README.md)
-
-Read [audit reports](https://github.com/nullity00/zk-security-reviews),-currently focusing on Circom projects
-
-Learn to use auditing tools like [PICUS](https://github.com/Veridise/Picus) and [CODA](https://github.com/Veridise/Coda)
-
-### Week 3
-
-### Objectives:
-
-Further understand ZK security
-
-### Study Tasks:
-
-Learn through puzzles in [ZKHack](https://zkhack.dev/), which involve more proof systems such as STARK, not just limited to SNARK
-
-### Learn through puzzles in ZKCTF:
-
-[Ingonyama CTF](https://hackmd.io/@shuklaayush/SkWizdyBh)
-
-
-
-
-### Circuit Check List
-
-<table>
-  <tr>
-    <td>Classification</td>
-    <td>Description</td>
-  </tr>
-  <tr>
-    <td>Completeness Check</td>
-    <td>Completeness Check</td>
-  </tr>
-    <tr>
-    <td>Soundness Check</td>
-    <td>Underconstrained input/output signal  |  Underconstrained component  |  Arithmetic operation correctness check  |  Bit length check(Range check) </td>
-  </tr>
-    <tr>
-    <td>Knowledge Leakage</td>
-    <td>Trusted Setup Leakage  |  Public information leakage privacy  </td>
-  </tr>
-    <tr>
-    <td>Architeture Design</td>
-    <td>E.g. H(x)=y with limited value of x</td>
-  </tr>
-</table>
 
 
 ## ZK Audit Database
